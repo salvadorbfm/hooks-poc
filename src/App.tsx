@@ -8,11 +8,10 @@ import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
 import DeleteIcon from "@material-ui/icons/Delete";
 import { IconButton, ListItemSecondaryAction } from "@material-ui/core";
 
-const log = console.info;
+// const log = console.info;
 
 type MaybePlan = Maybe<Plan>;
 type MaybePlanArray = Maybe<Plan[]>;

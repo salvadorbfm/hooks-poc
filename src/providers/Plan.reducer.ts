@@ -30,8 +30,9 @@ function planReducer(state: PlansState, action: Action): PlansState {
       }
 
       const plans = state.plans.concat(action.payload);
+      const selectedPlan = plans[0];
 
-      return { ...state, plans };
+      return { ...state, plans, selectedPlan };
     }
 
     case "UPDATE_PLAN": {
@@ -41,8 +42,9 @@ function planReducer(state: PlansState, action: Action): PlansState {
       const plans = excludePlanByID(state.plans, action.payload.id).concat(
         action.payload
       );
+      const selectedPlan = plans[0];
 
-      return { ...state, plans };
+      return { ...state, plans, selectedPlan };
     }
 
     case "DELETE_PLAN": {
